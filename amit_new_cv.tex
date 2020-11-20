@@ -1,0 +1,179 @@
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+%        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Amit Sarker} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+
+\moveleft.5\hoffset\centerline{Phone No. : +880 1521211137}
+\moveleft.5\hoffset\centerline{Email : amitcsedu99@gmail.com}
+LinkedIn : \href{https://www.linkedin.com/in/amit-sarker99/}\\
+GitHub : \href{https://github.com/amit-sarker}\\
+Website : \href{https://amit-sarker.github.io/}
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	Interests
+%----------------------------------------------------------------------------------------
+ 
+\section{INTERESTS}  
+Artificial Intelligence, Multi-agent Coordination and Optimization, Multi-agent Planning and Scheduling, Interaction Between Human and Robot/AI.
+
+%----------------------------------------------------------------------------------------
+%	Education 
+%----------------------------------------------------------------------------------------
+\section{EDUCATION} 
+{\sl \bf{University of Dhaka}} \hfill 2020 \\ Bachelor of Science in Computer Science and Engineering \\
+CGPA Score - 3.77/4.00
+
+% {\sl \bf{Dhaka Residential Model College}} \hfill 2012\\ Higher Secondary School Certificate\\
+% GPA Score - 5.00/5.00
+
+% {\sl \bf{Mohangonj Pilot Govt. High School}} \hfill 2010\\ Secondary School Certificate\\
+% GPA Score - 5.00/5.00 
+
+%----------------------------------------------------------------------------------------
+%	Training and Internships 
+%----------------------------------------------------------------------------------------
+
+\section{EXPERIENCE}
+{\sl \bf{TigerIT Bangladesh LTD.}}\hfill Apr. 2020 - Present\\
+Full Stack Software Engineer \\
+Software Quality Assurance (SQA) team \\
+Led By : Al Mamun Chowdhury
+
+{\sl \bf{Cognitive Agents and Interaction Lab (CAIL)}}\hfill Nov. 2018 - Jan. 2020\\
+Research Student, University of Dhaka \\
+Search-Based algorithm to solve Continuous DCOPs \\
+Supervised by : Dr. Md. Mosaddek Khan
+
+% Embedded Systems and its Applications
+%----------------------------------------------------------------------------------------
+%	Technical Skills 
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	Awards 
+%---------------------------------------------------------------------------------------
+
+\section{AWARDS}
+
+{\sl \bf{Code Samurai 2019 -- Inter University Hackathon} } \hfill Nov. 2019 \\ 
+\textbf{1st Runner-up} \\
+It was a national-level competition jointly organized by BJIT Limited, BJIT Academy and Department of CSE, University of Dhaka.
+
+
+\section{PUBLICATIONS}
+\begin{bibsection}
+\item \textbf{Amit Sarker}, Abdullahil Baki Arif, Moumita Choudhury, and Md. Mosaddek Khan. C-CoCoA: A Continuous Cooperative Constraint Approximation Algorithm to Solve Functional DCOPs. In \emph{Proc. of the 19th International Conference on Autonomous Agents and Multiagent Systems \textbf{(AAMAS 2020)}.} (Extended Abstract). \\ 
+\emph{11th International Workshop on Optimization and Learning in Multiagent Systems \textbf{(OptLearnMAS)} @ \mbox{AAMAS}, 2020} (Full Paper).
+
+\item Moumita Choudhury, \textbf{Amit Sarker}, Md. Mosaddek Khan, and William Yeoh. A Particle Swarm Inspired Approach for Continuous Distributed Constraint Optimization Problems. \emph{arXiv:2010.10192  (under review), 2020}.
+
+\item \textbf{Amit Sarker}, Abdullahil Baki Arif, and Md. Mosaddek Khan. Applying Local Search Algorithms for solving Functional Distributed Constraint Optimization problems
+(F-DCOPs) in Multi-Agent Systems. \emph{Undergraduate Thesis, Computer Science and Engineering, University of Dhaka, 2019}.
+\end{bibsection}
+
+
+
+\section{TECHNICAL \\ SKILLS} 
+
+{\sl Programming Languages:} Python, C/C++, LaTeX. \\
+{\sl Databases:}  MySQL, Oracle, MongoDB. \\
+{\sl Libraries:} PyTorch, Pandas, NumPy, Matplotlib. \\
+{\sl Web Technologies:} JavaScript, Python Flask, HTML/CSS. \\
+{\sl Cloud Platform:} Google Firebase.
+
+
+%----------------------------------------------------------------------------------------
+%	Projects 
+%----------------------------------------------------------------------------------------
+
+\section{PROJECTS}
+- {My Food Diary}
+{\sl \hfill {\normalfont Feb. 2018 - Apr. 2018} 
+\begin{itemize}
+    \item An android app implemented in Java for food tracking and health management. A user-friendly way to track daily calorie intake, water consumption and weight.
+    \item Genetic algorithm based automated food suggestions and goal oriented motivations.
+\end{itemize}
+}
+
+- {Track Me}
+{\sl \hfill {\normalfont Jul. 2017 - Oct. 2017} 
+\begin{itemize}
+    \item An android app implemented in Java for tracking personal vehicles on road by using Google Maps API.
+    \item Clustering based approach to detect anomaly in driving pattern and notify the car owner.
+\end{itemize}
+}
+
+- {GRE\_WebApp}
+{\sl \hfill {\normalfont Jul. 2018 - Oct. 2018} 
+\begin{itemize}
+    \item Flash-card based web application for the students to take preparation for the GRE (Graduate Record Examination).
+    \item The backend is developed using Python (Flask framework), MongoDB and the frontend is developed using HTML, CSS, Javascript.
+\end{itemize}
+}
+
+- {CSEDU Book Club}
+{\sl \hfill {\normalfont Feb. 2019 - Apr. 2019} 
+\begin{itemize}
+    \item An application for maintaining the book sharing activities of CSEDU Book Club.
+    \item Android app is implemented in Java, Web app is implemented in Python (Flask framework), Firebase database is used for both versions.
+\end{itemize}
+}
+
+- {29 Card Game}
+{\sl \hfill {\normalfont Feb. 2017 - Apr. 2017} 
+\begin{itemize}
+    \item A four-player 29 card game that is implemented by using Java Socket Programming.
+\end{itemize}
+}
+
+- {Stick Hero}
+{\sl \hfill {\normalfont Jun. 2016 - Aug. 2016} 
+\begin{itemize}
+    \item Windows version of the famous stick hero game. Implemented by using C++ and Simple and Fast Multimedia Library (SFML).
+\end{itemize}
+}
+
+
+\section{REFERENCE}
+
+{\sl {\bf Dr. Md. Mosaddek Khan } \\ Assistant Professor, Department of Computer Science and Engineering \\ University of Dhaka
+\\ Email - mosaddek@du.ac.bd}
+
+
+\end{resume}
+\end{document}
